@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Interactiva Edificación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular - Edificación UPM</h1>
+    <div id="creditos-aprobados">Créditos aprobados: 0</div>
+  </header>
+
+  <main>
+    <div id="malla-container">
+
+      <!-- Primer Año -->
+      <section class="year">
+        <h2>Primer Año</h2>
+
+        <div class="semester">
+          <h3>I Semestre</h3>
+          <div class="subjects">
+            <button class="subject locked" data-id="mat1" data-credits="6" data-pre="none">
+              Matemáticas I <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="dib1" data-credits="6" data-pre="none">
+              Dibujo Arquitectónico I <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="geo1" data-credits="6" data-pre="none">
+              Geometría Descriptiva I <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="fundmat" data-credits="6" data-pre="none">
+              Fundamentos materiales, Física y Química <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="mecanica" data-credits="6" data-pre="none">
+              Mecánica Física <span class="small">(obligatoria)</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="semester">
+          <h3>II Semestre</h3>
+          <div class="subjects">
+            <button class="subject locked" data-id="mat2" data-credits="6" data-pre="mat1">
+              Matemáticas II <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="fisinst" data-credits="6" data-pre="mecanica">
+              Física de las Instalaciones <span class="small">(obligatoria)</span>
+            </button>
+            <button class="subject locked" data-id="matcon1" data-credits="6" data-pre="fundmat">
+              Materiales de Construcción I
+            </button>
+            <button class="subject locked" data-id="introconst" data-credits="6" data-pre="none">
+              Introducción a la Construcción
+            </button>
+            <button class="subject locked" data-id="dib2" data-credits="3" data-pre="dib1">
+              Dibujo Arquitectónico II
+            </button>
+            <button class="subject locked" data-id="geo2" data-credits="3" data-pre="geo1">
+              Geometría Descriptiva II
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ... resto igual ... -->
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
