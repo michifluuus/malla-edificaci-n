@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff0f6;
+  color: #5a2a47;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+#creditos-aprobados {
+  font-size: 1.2rem;
+  color: #b33962;
+  font-weight: 600;
+}
+
+.year {
+  margin-bottom: 30px;
+  border-left: 5px solid #d6336c;
+  padding-left: 15px;
+}
+
+.semester {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #d6336c;
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject {
+  background: #ffe6f0;
+  border: 2px solid #d6336c;
+  border-radius: 6px;
+  padding: 12px 18px;
+  cursor: pointer;
+  width: 220px;
+  text-align: center;
+  font-weight: 600;
+  color: #5a2a47;
+  user-select: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 0 #d6336c;
+}
+
+.subject small {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #b33962;
+}
+
+.subject.locked {
+  background: #fce4ec;
+  border-color: #f8bbd0;
+  color: #aa5677;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.subject.locked:hover {
+  background: #fce4ec;
+}
+
+.subject.unlocked {
+  background: #ffd6e8;
+  border-color: #d6336c;
+  color: #5a2a47;
+  cursor: pointer;
+  box-shadow: inset 0 0 8px 1px #d6336c;
+}
+
+.subject.approved {
+  background: #d6336c;
+  color: white;
+  border-color: #a22552;
+  cursor: default;
+  box-shadow: 0 0 10px 2px #a22552;
+}
+
+.subject.approved:hover {
+  background: #b21f48;
+}
+
+.subject:focus-visible {
+  outline: 3px solid #d6336c;
+}
+
+@media (max-width: 600px) {
+  .subject {
+    width: 100%;
+  }
+}
